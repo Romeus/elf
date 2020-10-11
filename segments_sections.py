@@ -28,7 +28,7 @@ if __name__ == '__main__':
     for segment in segments:
         seg_head = segment['segment'].header
         print("Segment:")
-        print(f"Type: {seg_head.p_type}\nOffset: {hex(seg_head.p_offset)}\nVirtual address: {hex(seg_head.p_vaddr)}\nPhysical address: {(seg_head.p_paddr)}\Size in file:{hex(seg_head.p_filesz)}\nSize in memory:{hex(seg_head.p_memsz)}\n")
+        print(f"Type: {seg_head.p_type}\nOffset: {hex(seg_head.p_offset)}\nVirtual address: {hex(seg_head.p_vaddr)}\nPhysical address: {(seg_head.p_paddr)}\nSize in file: {hex(seg_head.p_filesz)}\nSize in memory: {hex(seg_head.p_memsz)}\n")
 
         if segment['sections']:
             print("Segment's sections:")
